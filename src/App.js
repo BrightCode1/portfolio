@@ -1,10 +1,11 @@
-import { Header, Info, Skills, Contact } from "./components";
+import { Header, About, Experience, Skills, Contact } from "./components";
 
 function App() {
   return (
     <div>
       <Header />
-      <Info />
+      <About />
+      <Experience />
       <Skills />
       <Contact />
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css";
+import "./skill.css";
 
 function Skills() {
   return <div>Skills</div>;
