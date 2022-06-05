@@ -1,4 +1,5 @@
-export { default as Contact } from "./Contact";
-export { default as Info } from "./Info";
-export { default as Navbar } from "./Navbar";
-export { default as Skills } from "./Skills";
+export { default as Contact } from "./contact/Contact";
+export { default as Header } from "./header/Header";
+export { default as Skills } from "./skill/Skills";
+export { default as About } from "./about/About";
+export { default as Experience } from "./experience/Experience";
