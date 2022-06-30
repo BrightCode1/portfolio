@@ -1,15 +1,18 @@
-import { Header, About, Experience, Skills, Contact } from "./components";
+import React from "react";
+import { Navbar, About, Contact, Home, Skills } from "./sections";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Header />
-      <About />
-      <Experience />
-      <Skills />
-      <Contact />
-    </div>
+    <>
+      <Navbar />
+      <div className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Contact />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
