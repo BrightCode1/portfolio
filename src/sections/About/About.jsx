@@ -1,4 +1,6 @@
 import React from "react";
+import { IoMdDownload } from "react-icons/io";
+
 import { AboutContainer } from "./aboutStyles";
 import AboutImage from "../../img/about.png";
 
@@ -38,6 +40,16 @@ const About = () => {
                 Companies <br /> Worked
               </span>
             </div>
+          </div>
+          <div className="about_btns">
+            <a
+              href="https://careerdevelopment.princeton.edu/sites/g/files/toruqf1041/files/media/cv_vs._resume_guide_1.pdf"
+              className="btn btn--flex"
+              download
+            >
+              Download CV
+              <IoMdDownload className="btn__icon" />
+            </a>
           </div>
         </div>
       </div>
