@@ -3,7 +3,7 @@ import React from "react";
 import SkillsCard from "../../components/SkillsCard";
 
 import { SkillsContainer } from "./skillStyles";
-import { mySkills } from "../../skillsContent";
+import { mySkills } from "./skillsContent";
 
 const Skills = () => {
   return (

@@ -1,5 +1,12 @@
 import React from "react";
-import { Navbar, About, Contact, Home, Skills } from "./sections";
+import {
+  Navbar,
+  About,
+  Contact,
+  Home,
+  Skills,
+  Qualification,
+} from "./sections";
 
 const App = () => {
   return (
@@ -9,6 +16,7 @@ const App = () => {
         <Home />
         <About />
         <Skills />
+        <Qualification />
         <Contact />
       </div>
     </>
