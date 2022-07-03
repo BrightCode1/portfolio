@@ -6,6 +6,8 @@ import {
   Home,
   Skills,
   Qualification,
+  Services,
+  Portfolio,
 } from "./sections";
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
         <About />
         <Skills />
         <Qualification />
+        <Services />
+        <Portfolio />
         <Contact />
       </div>
     </>
