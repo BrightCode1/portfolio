@@ -192,3 +192,11 @@ img {
   background-color: transparent;
   color: var(--first-color-alt);
 }
+
+.btn--disabled {
+  cursor: not-allowed;
+}
+
+.btn--disabled .btn__icon {
+  color: red;
+}
