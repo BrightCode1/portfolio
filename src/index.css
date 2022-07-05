@@ -195,8 +195,24 @@ img {
 
 .btn--disabled {
   cursor: not-allowed;
+  background: none;
+  color: var(--first-color);
+  padding: 1rem 0;
+}
+
+.btn--disabled:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
 }
 
 .btn--disabled .btn__icon {
   color: red;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+.btn--white:hover {
+  background-color: #fff;
 }

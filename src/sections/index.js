@@ -6,3 +6,5 @@ export { default as Skills } from "./Skills/Skills";
 export { default as Qualification } from "./Qualification/Qualification";
 export { default as Services } from "./Services/Services";
 export { default as Portfolio } from "./Portfolio/Portfolio";
+export { default as Project } from "./Project/Project";
+export { default as Footer } from "../components/Footer";

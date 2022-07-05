@@ -35,13 +35,26 @@ export const PortfolioContainer = styled.section`
     border-radius: 50%;
     background: white;
     border: 1px solid var(--first-color);
-    padding: 18px;
     color: var(--first-color);
+    width: 35px;
+    height: 35px;
+
+    &:after {
+      font-size: 15px;
+    }
   }
   .swiper-button-next {
     right: -0.5rem;
   }
   .swiper-button-prev {
     left: -0.5rem;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets {
+    bottom: -2.5rem;
+
+    .swiper-pagination-bullet-active {
+      background: var(--first-color);
+    }
   }
 `;

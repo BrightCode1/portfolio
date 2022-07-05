@@ -8,7 +8,10 @@ import {
   Qualification,
   Services,
   Portfolio,
+  Project,
+  Footer,
 } from "./sections";
+import ScrollTop from "./components/ScrollTop";
 
 const App = () => {
   return (
@@ -21,8 +24,11 @@ const App = () => {
         <Qualification />
         <Services />
         <Portfolio />
+        <Project />
         <Contact />
+        <Footer />
       </div>
+      <ScrollTop />
     </>
   );
 };

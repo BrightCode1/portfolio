@@ -87,3 +87,73 @@ export const NavbarContainer = styled.div`
     bottom: 0;
   }
 `;
+
+export const FooterContainer = styled.footer`
+  padding-top: 2rem;
+
+  .footer__bg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+
+    .footer__container {
+      row-gap: 3.5rem;
+
+      .footer__title {
+        font-size: var(--h1-font-size);
+        margin-bottom: var(--mb-0-25);
+      }
+      .footer__subtitle {
+        font-size: var(--small-font-size);
+      }
+
+      .footer__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+
+        .footer__link:hover {
+          color: var(--first-color-lighter);
+        }
+      }
+
+      .footer__social {
+        font-size: 1.2rem;
+        margin-right: var(--mb-1-5);
+
+        &:hover {
+          color: var(--first-color-lighter);
+        }
+      }
+    }
+  }
+  .footer__copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--first-color-light);
+    margin-top: var(--mb-3);
+  }
+
+  .footer__title,
+  .footer__subtitle,
+  .footer__link,
+  .footer__social {
+    color: #fff;
+  }
+`;
+
+export const ScrollToTop = styled.div`
+  visibility: ${(props) => (props.isScroll ? "visible" : "hidden")};
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color-lighter);
+  border-radius: 10%;
+  background-color: var(--first-color);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
