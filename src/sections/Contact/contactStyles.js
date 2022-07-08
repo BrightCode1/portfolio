@@ -33,6 +33,7 @@ export const ContactContainer = styled.section`
       .contact__label {
         color: var(--title-color);
         font-size: var(--smaller-font-size);
+        cursor: text;
       }
 
       .contact__input {

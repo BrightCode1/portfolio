@@ -8,10 +8,7 @@ import { QualificationContainer } from "./quaStyles";
 const Qualification = () => {
   const [tabSet, setTabSet] = useState(0);
   return (
-    <QualificationContainer
-      className="qualification section"
-      id="qualification"
-    >
+    <QualificationContainer className="qualification section">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My journeys</span>
 

@@ -4,7 +4,7 @@ import { ProjectContainer } from "./projectStyles";
 
 const Project = () => {
   return (
-    <ProjectContainer className="section project" id="project">
+    <ProjectContainer className="section project">
       <div className="project__bg">
         <div className="project__container container grid">
           <div className="project__data">

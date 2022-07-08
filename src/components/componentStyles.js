@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.header`
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+
+  &.scroll-header {
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.15);
+  }
 
   .nav {
     max-width: 968px;
@@ -24,13 +28,28 @@ export const NavbarContainer = styled.div`
     .nav__logo:hover {
       color: var(--first-color);
     }
+    .nav__btns {
+      display: flex;
+      align-items: center;
 
-    .nav__toggle {
-      font-size: 1.1rem;
-      cursor: pointer;
+      .change-theme {
+        font-size: 1.1rem;
+        color: var(--title-color);
+        cursor: pointer;
+        margin-right: var(--mb-1);
 
-      &:hover {
-        color: var(--first-color);
+        &:hover {
+          color: var(--first-color);
+        }
+      }
+
+      .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--first-color);
+        }
       }
     }
   }
@@ -62,6 +81,11 @@ export const NavbarContainer = styled.div`
 
       &:hover {
         color: var(--first-color);
+      }
+
+      &.active-link {
+        color: var(--first-color);
+        font-weight: var(--font-medium);
       }
 
       .nav__icon {
@@ -142,13 +166,12 @@ export const FooterContainer = styled.footer`
 `;
 
 export const ScrollToTop = styled.div`
-  visibility: ${(props) => (props.isScroll ? "visible" : "hidden")};
   position: fixed;
-  bottom: 4rem;
+  bottom: ${(props) => (props.isScroll ? "4rem" : "-20%")};
   right: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color-lighter);
+  color: #fff;
   border-radius: 10%;
   background-color: var(--first-color);
   width: 2rem;
@@ -156,4 +179,10 @@ export const ScrollToTop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  z-index: var(--z-tooltip);
+
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
 `;

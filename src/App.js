@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   About,
@@ -14,9 +14,23 @@ import {
 import ScrollTop from "./components/ScrollTop";
 
 const App = () => {
+  const [isCurrentSection, setIsCurrentSection] = useState(false);
+  const [currentSection, setCurrentSection] = useState("home");
+
+  //change website theme color on button on load using useeffect
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme) {
+      document.body.classList.add(theme);
+    }
+  }, []);
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        currentSection={currentSection}
+        isCurrentSection={isCurrentSection}
+      />
       <div className="main">
         <Home />
         <About />
@@ -28,7 +42,10 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
-      <ScrollTop />
+      <ScrollTop
+        setIsCurrentSection={setIsCurrentSection}
+        setCurrentSection={setCurrentSection}
+      />
     </>
   );
 };
