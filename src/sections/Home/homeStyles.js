@@ -80,5 +80,30 @@ export const HomeContainer = styled.section`
         }
       }
     }
+
+    @media screen and (max-width: 350px) {
+      .home__content {
+        grid-template-columns: 0.25fr 3fr;
+
+        .home__blob {
+          width: 180px !important;
+        }
+      }
+    }
+
+    @media screen and (min-width: 568px) {
+      .home__content {
+        grid-template-columns: max-content 1fr 1fr;
+
+        .home__data {
+          grid-column: initial;
+        }
+
+        .home__img {
+          order: 1;
+          justify-self: center;
+        }
+      }
+    }
   }
 `;

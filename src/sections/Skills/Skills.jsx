@@ -12,11 +12,9 @@ const Skills = () => {
       <span className="section__subtitle">My technical level</span>
 
       <div className="skills__container container grid">
-        <div>
-          {mySkills.map((skill) => (
-            <SkillsCard key={skill.id} skill={skill} />
-          ))}
-        </div>
+        {mySkills.map((skill) => (
+          <SkillsCard key={skill.id} skill={skill} />
+        ))}
       </div>
     </SkillsContainer>
   );

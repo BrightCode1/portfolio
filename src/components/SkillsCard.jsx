@@ -23,7 +23,7 @@ const SkillsCard = ({ skill }) => {
 
       <div className="skills__list grid">
         {skill.languages.map((language) => (
-          <div className="skills__data">
+          <div className="skills__data" key={language.lowerCase}>
             <div className="skills__titles">
               <h3 className="skills__name">{language.name}</h3>
               <span className="skills__num">{language.level}</span>

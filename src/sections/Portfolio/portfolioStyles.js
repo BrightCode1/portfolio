@@ -32,22 +32,17 @@ export const PortfolioContainer = styled.section`
   .swiper-button-next,
   .swiper-button-prev {
     font-weight: bold;
-    border-radius: 50%;
-    background: white;
-    border: 1px solid var(--first-color);
     color: var(--first-color);
-    width: 35px;
-    height: 35px;
 
     &:after {
-      font-size: 15px;
+      font-size: 18px;
     }
   }
   .swiper-button-next {
-    right: -0.5rem;
+    right: -0.7rem;
   }
   .swiper-button-prev {
-    left: -0.5rem;
+    left: -0.7rem;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets {
@@ -55,6 +50,12 @@ export const PortfolioContainer = styled.section`
 
     .swiper-pagination-bullet-active {
       background: var(--first-color);
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    .port__content {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;

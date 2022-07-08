@@ -40,4 +40,10 @@ export const AboutContainer = styled.section`
     display: flex;
     justify-content: center;
   }
+
+  @media screen and (min-width: 568px) {
+    .about__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 `;

@@ -110,6 +110,16 @@ export const NavbarContainer = styled.header`
   .show-menu {
     bottom: 0;
   }
+
+  @media screen and (max-width: 350px) {
+    .nav__menu {
+      padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list {
+      column-gap: 0;
+    }
+  }
 `;
 
 export const FooterContainer = styled.footer`
@@ -162,6 +172,12 @@ export const FooterContainer = styled.footer`
   .footer__link,
   .footer__social {
     color: #fff;
+  }
+
+  @media screen and (min-width: 568px) {
+    .footer__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 `;
 

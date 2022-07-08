@@ -51,4 +51,10 @@ export const ContactContainer = styled.section`
       }
     }
   }
+
+  @media screen and (min-width: 568px) {
+    .contact__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 `;

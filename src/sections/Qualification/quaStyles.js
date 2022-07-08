@@ -90,4 +90,18 @@ export const QualificationContainer = styled.section`
   .qua__content.qua__active {
     display: block;
   }
+
+  @media screen and (max-width: 350px) {
+    .qua__data {
+      gap: 0.5rem;
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    .qua__sections {
+      display: grid;
+      grid-template-columns: 0.6fr;
+      justify-content: center;
+    }
+  }
 `;

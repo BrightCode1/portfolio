@@ -98,4 +98,19 @@ export const ServiceContainer = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 350px) {
+    .services__container {
+      grid-template-columns: max-content;
+      justify-content: center;
+
+      .services__content {
+        padding-right: 3.5rem;
+
+        .services__modal {
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
 `;

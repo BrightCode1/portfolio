@@ -79,4 +79,20 @@ export const SkillsContainer = styled.section`
   .skills__open .skills__arrow {
     transform: rotate(-180deg);
   }
+
+  @media screen and (max-width: 350px) {
+    .skills_title {
+      font-size: var(--normal-font-size);
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    .skills__container {
+      grid-template-columns: repeat(2, 1fr);
+
+      .skills__title {
+        font-size: var(--h2-font-size);
+      }
+    }
+  }
 `;
