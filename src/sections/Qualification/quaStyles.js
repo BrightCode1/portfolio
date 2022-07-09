@@ -104,4 +104,17 @@ export const QualificationContainer = styled.section`
       justify-content: center;
     }
   }
+  @media screen and (min-width: 768px) {
+    .qua__tabs {
+      justify-content: center;
+
+      .qua__btn {
+        margin: 0 var(--mb-1);
+      }
+    }
+
+    .qua__sections {
+      grid-template-columns: 0.5fr;
+    }
+  }
 `;

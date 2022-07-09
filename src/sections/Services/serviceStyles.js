@@ -113,4 +113,25 @@ export const ServiceContainer = styled.section`
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    .services__container {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      justify-content: center;
+
+      .services__modal-content {
+        width: 450px;
+      }
+    }
+
+    .services__icon {
+      font-size: 2rem !important;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .services__container {
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+  }
 `;

@@ -105,5 +105,37 @@ export const HomeContainer = styled.section`
         }
       }
     }
+
+    @media screen and (min-width: 768px) {
+      row-gap: 5rem;
+
+      .home__content {
+        //make 3 later
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+
+        .home__blob {
+          width: 270px;
+        }
+      }
+
+      .home__scroll {
+        display: block;
+
+        .home__scroll-btn {
+          margin-left: 3rem;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .home__blob {
+        width: 320px !important;
+      }
+
+      .home__social {
+        transform: translateX(-6rem);
+      }
+    }
   }
 `;

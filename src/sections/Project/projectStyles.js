@@ -42,4 +42,20 @@ export const ProjectContainer = styled.section`
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    text-align: initial;
+
+    .project__bg {
+      background: none;
+    }
+
+    .project__container {
+      background-color: var(--first-color-second);
+      border-radius: 1rem;
+      padding: 3rem 2.5rem 0;
+      grid-template-columns: 1fr max-content;
+      column-gap: 3rem;
+    }
+  }
 `;

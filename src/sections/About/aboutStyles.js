@@ -36,7 +36,7 @@ export const AboutContainer = styled.section`
     }
   }
 
-  .about_btns {
+  .about__btns {
     display: flex;
     justify-content: center;
   }
@@ -44,6 +44,28 @@ export const AboutContainer = styled.section`
   @media screen and (min-width: 568px) {
     .about__container {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .about__container {
+      column-gap: 5rem;
+
+      .about__img {
+        width: 350px;
+      }
+
+      .about__description {
+        text-align: initial;
+      }
+
+      .about__info {
+        justify-content: space-between;
+      }
+
+      .about__btns {
+        justify-content: initial;
+      }
     }
   }
 `;

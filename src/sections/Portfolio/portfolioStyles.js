@@ -58,4 +58,38 @@ export const PortfolioContainer = styled.section`
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    .port__content {
+      align-items: center;
+
+      .port__img {
+        width: 320px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .port__content {
+      column-gap: 5rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      &:after {
+        font-size: 2rem;
+      }
+    }
+
+    .swiper-button-next {
+      right: -2.5rem;
+    }
+    .swiper-button-prev {
+      left: -2.5rem;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets {
+      bottom: -4rem;
+    }
+  }
 `;

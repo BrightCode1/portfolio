@@ -41,7 +41,7 @@ const About = () => {
               </span>
             </div>
           </div>
-          <div className="about_btns">
+          <div className="about__btns">
             <a
               href="https://careerdevelopment.princeton.edu/sites/g/files/toruqf1041/files/media/cv_vs._resume_guide_1.pdf"
               className="btn btn--flex"
