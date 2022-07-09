@@ -13,7 +13,7 @@ const Header = () => {
         <div className="home__content grid">
           <div className="home__social">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/kcib/"
               target="_blank"
               rel="noreferrer"
               className="home__social-icon"
@@ -21,7 +21,7 @@ const Header = () => {
               <FiLinkedin />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://twitter.com/kcibdev"
               target="_blank"
               rel="noreferrer"
               className="home__social-icon"
@@ -29,7 +29,7 @@ const Header = () => {
               <FiTwitter />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/kcibdev"
               target="_blank"
               rel="noreferrer"
               className="home__social-icon"
