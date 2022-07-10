@@ -6,11 +6,14 @@ export const PortfolioContainer = styled.section`
 
     .port__content {
       padding: 0 1.5rem;
+      position: relative;
 
       .port__img {
         wdith: 265px;
         border-radius: 0.5rem;
         justify-content: center;
+        max-height: 300px;
+        object-fit: cover;
       }
 
       .port__title {
@@ -25,6 +28,37 @@ export const PortfolioContainer = styled.section`
 
       .port__btn:hover .btn__icon {
         transform: translateX(0.25rem);
+      }
+
+      .port__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: var(--z-modal);
+        padding: 0 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &.active-modal {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .port__modal-close {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          font-size: 1.5rem;
+          color: var(--first-color);
+          cursor: pointer;
+        }
       }
     }
   }

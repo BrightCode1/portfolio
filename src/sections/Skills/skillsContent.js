@@ -1,7 +1,7 @@
 import { BiCodeCurly } from "react-icons/bi";
 import { IoServerOutline } from "react-icons/io5";
 import { BsVectorPen } from "react-icons/bs";
-import { GiSkills } from "react-icons/gi";
+import { ImAndroid } from "react-icons/im";
 
 export const mySkills = [
   {
@@ -23,13 +23,13 @@ export const mySkills = [
         number: "80",
       },
       {
-        name: "JavaScript",
+        name: "JavaScript & JQuery",
         lowerCase: "js",
         level: "70%",
         number: "70",
       },
       {
-        name: "React.js",
+        name: "React.js, TypeScript, Next.js",
         lowerCase: "react",
         level: "70%",
         number: "70",
@@ -54,12 +54,7 @@ export const mySkills = [
         level: "80%",
         number: "80",
       },
-      {
-        name: "Firebase",
-        lowerCase: "firebase",
-        level: "70%",
-        number: "70",
-      },
+
       {
         name: "MySql",
         lowerCase: "mysql",
@@ -76,8 +71,28 @@ export const mySkills = [
   },
   {
     id: 2,
-    title: "Designer",
-    subtitle: "More than 3 years",
+    title: "Mobile Developer",
+    subtitle: "More than 4 years",
+    icon: ImAndroid,
+    languages: [
+      {
+        name: "Flutter & Dart",
+        lowerCase: "flutter",
+        level: "90%",
+        number: "90",
+      },
+      {
+        name: "Firebase",
+        lowerCase: "firebase",
+        level: "70%",
+        number: "70",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Tools",
+    subtitle: "More than 4 years",
     icon: BsVectorPen,
     languages: [
       {
@@ -92,25 +107,17 @@ export const mySkills = [
         level: "60%",
         number: "60",
       },
-    ],
-  },
-  {
-    id: 3,
-    title: "Others",
-    subtitle: "More than 3 years",
-    icon: GiSkills,
-    languages: [
       {
-        name: "Rest Api",
-        lowerCase: "rest",
-        level: "80%",
-        number: "80",
+        name: "Heroku & Netlify",
+        lowerCase: "heroku",
+        level: "60%",
+        number: "60",
       },
       {
-        name: "Blockchain",
-        lowerCase: "blockchain",
-        level: "40%",
-        number: "40",
+        name: "Git & Github",
+        lowerCase: "git",
+        level: "80%",
+        number: "80",
       },
     ],
   },

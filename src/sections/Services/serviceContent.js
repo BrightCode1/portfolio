@@ -11,9 +11,9 @@ export const services = [
     lists: [
       "User Interface Design",
       "User Experience Design",
-      "Lorem ipsu adipiscing elit.",
-      "User Lorem ipsu adipiscing elit.",
-      "ULorem ipsu adipiscing elit.rface Design",
+      "Develop features on users feedback",
+      "Creating responsive design",
+      "Optimized website for best speed and scalability",
     ],
   },
   {
@@ -22,11 +22,10 @@ export const services = [
     title2: "Deveoper",
     icon: IoServerOutline,
     lists: [
-      "User Interface Design",
-      "User Experience Design",
-      "Lorem ipsu adipiscing elit.",
-      "User Lorem ipsu adipiscing elit.",
-      "ULorem ipsu adipiscing elit.rface Design",
+      "Debug and troubleshoot apps",
+      "Develop & maintain Application Programming Interfaces (APIs)",
+      "Writing clean & maintainable code",
+      "collaboration and effective team skills",
     ],
   },
   {
@@ -35,11 +34,11 @@ export const services = [
     title2: "Developer",
     icon: ImAndroid,
     lists: [
-      "User Interface Design",
-      "User Experience Design",
-      "Lorem ipsu adipiscing elit.",
-      "User Lorem ipsu adipiscing elit.",
-      "ULorem ipsu adipiscing elit.rface Design",
+      "Developing APIs to support mobile functionality",
+      "UI/UX mobile design",
+      "implementation of new apps or already existing ones",
+      "Ensuring the correct linking of the backend and frontend ",
+      "Working with colleagues to innovate app functionality and design",
     ],
   },
   {
@@ -48,11 +47,8 @@ export const services = [
     title2: "Designer",
     icon: BsGrid1X2,
     lists: [
-      "User Interface Design",
-      "User Experience Design",
-      "Lorem ipsu adipiscing elit.",
-      "User Lorem ipsu adipiscing elit.",
-      "ULorem ipsu adipiscing elit.rface Design",
+      "Create a user friendly interface",
+      "Develop product base on user needs",
     ],
   },
 ];

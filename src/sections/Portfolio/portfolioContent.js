@@ -1,26 +1,20 @@
+// import FoodNow from "../../img/foodnow.png";
+
 export const portfolioList = [
   {
     id: 0,
-    img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    title: "Modern Website",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .",
-    link: "https://www.google.com",
+    img: "https://play-lh.googleusercontent.com/SvSGmjbErolaNRqq3xqx6NFn3Rldjqz_SFvqRZQ5ElujeYVbP2k21M_C8lAdu28Hq60=w240-h480",
+    title: "Food Delivery Application",
+    desc: "An ecommerce food delivery mobile aplication <br /> skills: <b>Flutter, dart, APIs</b>",
+    link: "https://play.google.com/store/apps/details?id=ng.foodnow",
     isAvailable: true,
   },
   {
     id: 1,
-    img: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Ecommerce Website",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .",
-    link: "https://www.google.com",
+    img: "https://play-lh.googleusercontent.com/7yraXXwHYZhILCctORn3PcTzIIqdARICxXY07hTIF637_lHAqdt3aQpXOPmYTZH76yk=w240-h480-rw",
+    title: "Student Social Application",
+    desc: "A social app where students are able to post, comment, communicate with each other, upload and download pdfs etc <br /> skills: <b>Flutter, dart, APIs, PHP, MySql, Firebase</b>",
+    link: "https://play.google.com/store/apps/details?id=com.kcib.quelib",
     isAvailable: true,
-  },
-  {
-    id: 2,
-    img: "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Ecommerce Mobile App",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore .",
-    link: "https://www.google.com",
-    isAvailable: false,
   },
 ];
