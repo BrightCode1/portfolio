@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   Navbar,
   About,
@@ -46,6 +49,7 @@ const App = () => {
         setIsCurrentSection={setIsCurrentSection}
         setCurrentSection={setCurrentSection}
       />
+      <ToastContainer newestOnTop={true} />
     </>
   );
 };

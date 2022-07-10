@@ -3,6 +3,9 @@ import { BsTelephone } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
 import { GoLocation } from "react-icons/go";
 import { BiSend } from "react-icons/bi";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { PulseLoader } from "react-spinners";
 
 import { ContactContainer } from "./contactStyles";
 
@@ -13,19 +16,59 @@ const Contact = () => {
     project: "",
     message: "",
   });
-
-  const { name, email, project, message } = formData;
+  const [isSendingMessage, setIsSendingMessage] = useState(false);
 
   const onChangeInput = (e) => {
-    const { name, value } = e.target;
     setFormData({
-      formData,
-      [name]: value,
+      ...formData,
+      [e.target.name]: e.target.value,
     });
   };
 
   const SendMessage = (e) => {
     e.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.message ||
+      !formData.project
+    ) {
+      toast.error("Fill in all fields!");
+      return;
+    }
+
+    setIsSendingMessage(true);
+    const templateParams = {
+      username: formData.name,
+      email: formData.email,
+      project: formData.project,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "portfolio",
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLIC_ID
+      )
+      .then(
+        (response) => {
+          setFormData({
+            name: "",
+            email: "",
+            project: "",
+            message: "",
+          });
+          toast.success("Message sent successfully!");
+          setIsSendingMessage(false);
+        },
+        (err) => {
+          setIsSendingMessage(false);
+          toast.error("Error sending message!");
+        }
+      );
   };
   return (
     <ContactContainer className="contact section" id="contact">
@@ -118,17 +161,27 @@ const Contact = () => {
             ></textarea>
           </div>
           <div>
-            <button
-              type="submit"
-              onClick={SendMessage}
-              className="btn btn--flex"
-              style={{
-                border: "none",
-              }}
-            >
-              Send Message
-              <BiSend className="btn__icon" />
-            </button>
+            {!isSendingMessage ? (
+              <button
+                type="submit"
+                onClick={SendMessage}
+                className="btn btn--flex"
+                style={{
+                  border: "none",
+                }}
+              >
+                Send Message
+                <BiSend className="btn__icon" />
+              </button>
+            ) : (
+              <PulseLoader
+                size={15}
+                color={"var(--first-color)"}
+                cssOverride={{
+                  color: "var(--first-color)",
+                }}
+              />
+            )}
           </div>
         </form>
       </div>

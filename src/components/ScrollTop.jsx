@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
 
 import { ScrollToTop } from "./componentStyles";
@@ -11,9 +11,9 @@ const ScrollTop = ({ setCurrentSection, setIsCurrentSection }) => {
     });
   };
 
-  const [isScroll, setIsScroll] = React.useState(false);
+  const [isScroll, setIsScroll] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const onScroll = (e) => {
       const scrollY = window.pageYOffset;
       const sections = document.querySelectorAll("section[id]");
@@ -33,7 +33,7 @@ const ScrollTop = ({ setCurrentSection, setIsCurrentSection }) => {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isScroll]);
+  }, [isScroll, setCurrentSection, setIsCurrentSection]);
   return (
     <ScrollToTop onClick={scrollToBottom} isScroll={isScroll}>
       <FaAngleUp />
