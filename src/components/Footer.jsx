@@ -9,7 +9,9 @@ const Footer = () => {
       <div className="footer__bg">
         <div className="footer__container container grid">
           <div>
-            <h1 className="footer__title">KCIBDEV</h1>
+            <h1 className="footer__title">
+              KCIB<span>.DEV</span>
+            </h1>
             <span className="footer__subtitle">Full Stack Developer</span>
           </div>
           <ul className="footer__links">

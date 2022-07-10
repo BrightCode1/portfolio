@@ -25,8 +25,24 @@ export const NavbarContainer = styled.header`
       font-weight: var(--font-medium);
     }
 
-    .nav__logo:hover {
-      color: var(--first-color);
+    .nav__logo {
+      font-family: "Nunito", sans-serif;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 50%;
+        height: 2px;
+        background-color: var(--first-color);
+        border-radius: 0.5rem;
+      }
+
+      span {
+        color: var(--first-color);
+      }
     }
     .nav__btns {
       display: flex;
@@ -168,6 +184,23 @@ export const FooterContainer = styled.footer`
       .footer__title {
         font-size: var(--h1-font-size);
         margin-bottom: var(--mb-0-25);
+        font-family: "Nunito", sans-serif;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 25%;
+          height: 2px;
+          background-color: #fff;
+          border-radius: 0.5rem;
+        }
+
+        span {
+          color: var(--first-color-lighter);
+        }
       }
       .footer__subtitle {
         font-size: var(--small-font-size);

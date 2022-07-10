@@ -31,7 +31,7 @@ const Navbar = ({ currentSection, isCurrentSection }) => {
     <NavbarContainer className={`${isCurrentSection && "scroll-header"}`}>
       <nav className="nav container">
         <a href="#home" className="nav__logo">
-          KCIBDEV
+          KCIB<span>.DEV</span>
         </a>
 
         <div className={`nav__menu ${navToggle && "show-menu"}`} id="nav-menu">

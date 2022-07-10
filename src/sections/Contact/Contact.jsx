@@ -117,6 +117,7 @@ const Contact = () => {
                 id="input-name"
                 name="name"
                 className="contact__input"
+                placeholder="Enter your full name"
               />
             </div>
             <div className="contact__content">
@@ -130,6 +131,7 @@ const Contact = () => {
                 id="input-email"
                 name="email"
                 className="contact__input"
+                placeholder="Enter your email address"
               />
             </div>
           </div>
@@ -144,6 +146,7 @@ const Contact = () => {
               id="input-project"
               name="project"
               className="contact__input"
+              placeholder="What project do you want to work on?"
             />
           </div>
           <div className="contact__content">
@@ -158,6 +161,7 @@ const Contact = () => {
               cols="0"
               rows="7"
               className="contact__input"
+              placeholder="Hi, I think we need an application for our products at Company X. How soon can you hop on to discuss this?"
             ></textarea>
           </div>
           <div>

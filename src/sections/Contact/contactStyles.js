@@ -45,6 +45,10 @@ export const ContactContainer = styled.section`
         border: none;
         outline: none;
         padding: 0.25rem 0.5rem 0.5rem 0;
+
+        &::placeholder {
+          font-size: var(--smaller-font-size);
+        }
       }
       textarea.contact__input {
         resize: vertical;

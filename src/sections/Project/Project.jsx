@@ -1,7 +1,7 @@
 import React from "react";
 import { BiSend } from "react-icons/bi";
 import { ProjectContainer } from "./projectStyles";
-import AboutImage from "../../img/about.png";
+import AboutImage from "../../assets/img/about.png";
 
 const Project = () => {
   return (

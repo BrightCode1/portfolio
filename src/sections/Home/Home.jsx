@@ -4,7 +4,7 @@ import { BsMouse } from "react-icons/bs";
 import { BiDownArrowAlt, BiSend } from "react-icons/bi";
 
 import { HomeContainer } from "./homeStyles";
-import MyImage from "../../img/myImage.png";
+import MyImage from "../../assets/img/myImage.png";
 
 const Header = () => {
   return (
@@ -72,8 +72,9 @@ const Header = () => {
             <h1 className="home__title">Hi, I'm Kelechi</h1>
             <h2 className="home__subtitle">Full Stack Developer</h2>
             <p className="home__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              esse harum similique, et blanditiis omnmque facet!
+              I'm a Web & Mobile developer from Port Harcourt, Nigeria. I
+              specialize in building softwares for clients. I love learning new
+              technologies and always looking to improve my skills.
             </p>
             <a href="#contact" className="btn btn--flex">
               Contact Me <BiSend className="btn__icon" />
