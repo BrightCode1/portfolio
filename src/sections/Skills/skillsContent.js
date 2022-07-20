@@ -34,6 +34,12 @@ export const mySkills = [
         level: "70%",
         number: "70",
       },
+      {
+        name: "Tailwind CSS",
+        lowerCase: "tailwind",
+        level: "70%",
+        number: "70",
+      },
     ],
   },
   {
@@ -49,7 +55,7 @@ export const mySkills = [
         number: "80",
       },
       {
-        name: "Node.js (Express.js)",
+        name: "Node.js (Express.js, Sequelize)",
         lowerCase: "node",
         level: "80%",
         number: "80",
@@ -64,6 +70,12 @@ export const mySkills = [
       {
         name: "MongoDB",
         lowerCase: "mongodb",
+        level: "70%",
+        number: "70",
+      },
+      {
+        name: "GraphQL",
+        lowerCase: "graphql",
         level: "70%",
         number: "70",
       },

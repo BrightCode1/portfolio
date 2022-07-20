@@ -36,12 +36,14 @@ export const SkillsContainer = styled.section`
     }
 
     .skills__list {
-      transition: all 0.3s ease-in-out;
+      flex-wrap: wrap;
+      display: flex;
 
       .skills__titles {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: var(--mb-0-5);
+        margin: var(--mb-0-5);
+        border: 1px solid #eee;
+        padding: var(--mb-0-5);
+        border-radius: 5px;
 
         .skills__name {
           font-size: var(--normal-font-size);
