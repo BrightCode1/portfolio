@@ -229,7 +229,7 @@ export const FooterContainer = styled.footer`
   .footer__copy {
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--first-color-light);
+    color: var(--first-color-lighter);
     margin-top: var(--mb-3);
   }
 

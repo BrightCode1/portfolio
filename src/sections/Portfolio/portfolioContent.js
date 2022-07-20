@@ -1,4 +1,5 @@
 import Albaama from "../../assets/img/albaama.png";
+import Metamask from "../../assets/img/metamask.PNG";
 
 export const portfolioList = [
   {
@@ -17,9 +18,16 @@ export const portfolioList = [
     link: "https://play.google.com/store/apps/details?id=ng.foodnow",
     isAvailable: true,
   },
-
   {
     id: 2,
+    img: Metamask,
+    title: "Blockchain Application",
+    desc: "A website where users can send and receive transactions through the blockchain using MetaMask (They have to log in too)<br /> skills: <b>React.js, Tailwind CSS, Solidity, Styled-Components, Zustand</b>",
+    link: "https://kcib-crypto.netlify.app",
+    isAvailable: true,
+  },
+  {
+    id: 3,
     img: Albaama,
     title: "Ecommerce Website",
     desc: "An online ecommerce store where users can order for products from different sellers and have it delivered to them, with admin dashboard too<br /> skills: <b>HTML, CSS, JavaScript (JQuery), PHP, MYSQL</b>",

@@ -72,7 +72,7 @@ export const mySkills = [
   {
     id: 2,
     title: "Mobile Developer",
-    subtitle: "More than 4 years",
+    subtitle: "More than 2 years",
     icon: ImAndroid,
     languages: [
       {
